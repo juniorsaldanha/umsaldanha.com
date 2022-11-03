@@ -1,0 +1,191 @@
+{
+  "basics": {
+    "name": "Junior Saldanha",
+    "label": "Software Engineer",
+    "picture": "images/umsaldanha.jpg",
+    "x_pictureFallback": "images/umsaldanha.jpg",
+    "x_title": "Hey There! Glad you're here",
+    "summary": "Going on 4 years of experience in Software engineering. I'm currently working as tech lead on robotic team. I’m interested in building distributed, cloud native applications, IoT platforms, service management, monitoring and site reliability engineering.",
+    "location": {
+      "country": "United States",
+      "countryCode": "US",
+      "region": "Cleveland"
+    },
+    "profiles": [
+      {
+        "network": "DEV Community",
+        "username": "umsaldanha",
+        "url": "https://dev.to/umsaldanha",
+        "x_icon": "fab fa-2x fa-dev"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "umsaldanha",
+        "url": "https://www.linkedin.com/in/umsaldanha",
+        "x_icon": "fab fa-2x fa-linkedin"
+      },
+      {
+        "network": "Instagram",
+        "username": "umsaldanha",
+        "url": "https://www.instagram.com/umsaldanha",
+        "x_icon": "fab fa-2x fa-instagram"
+      },
+      {
+        "network": "Twitter",
+        "username": "umsaldanha",
+        "url": "https://www.twitter.com/umsaldanha",
+        "x_icon": "fab fa-2x fa-twitter"
+      },
+      {
+        "network": "GitHub",
+        "username": "juniorsaldanha",
+        "url": "https://github.com/juniorsaldanha",
+        "x_icon": "fab fa-2x fa-github"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "IONIC Health - USA",
+      "position": "Tech Lead USA",
+      "website": "https://www.ionic.health",
+      "startDate": "2022-03-01",
+      "endDate": "",
+      "summary": "This position was offered me because i have all the knowledge about the company's products, i'm fluent in english and i have the responsability of R&D, and we undestood that it will be alot R&D in USA as we go into the market.",
+      "highlights": []
+    },
+    {
+      "company": "IONIC Health - Global/Brazil",
+      "position": "Tech Lead | Robotic and R&D Team",
+      "website": "https://www.ionic.health",
+      "startDate": "2019-02-01",
+      "endDate": "",
+      "summary": "Started my first professional developer experience combined with the knowledge about networking that i already had, i came to help on a development of IoT Platform and after some time i had to assume Robotic's leadership, so ive put together my own team, that ive choosen each one of, and have been developing hardware and software for 3 years so far. I got to work with Python, C/C++, Js, Docker, K8s, and IoT",
+      "highlights": []
+    },
+    {
+      "company": "Controlled - Gestão de TI e Infraestrutura",
+      "position": "Network Analyst",
+      "website": "https://www.controlled.com.br",
+      "startDate": "2016-03-15",
+      "endDate": "2017-03-14",
+      "summary": "This position has given to me some big challenges working with networking and managing some data centers, i was resposible for managing and structuring the network of some clients like OZ Minerals (mining company), Hospitals, and Clinics. I got to work with Firewall (Palo Alto, Fortgate), Routers (Mikrotik and scripting with it), and some switchs L2 L3, Zabbix, Grafana",
+      "highlights": []
+    },
+    {
+      "company": "Censo - Centro de Saude Ocupacional",
+      "position": "IT Support Technician",
+      "website": "https://www.censopa.com.br",
+      "startDate": "2013-12-03",
+      "endDate": "2016-03-14",
+      "summary": "My first real work experience. As IT Support Technician I was able to learn and explore the IT envirment and got the knoledge around it. I got to work with Firewalls, Routers, Zabbix, Grafana, some of bash and python scripting.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "UFMS - Universidade Federal do Mato Grosso do SUl",
+      "area": "Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2017-03-15",
+      "endDate": "2018-12-01",
+      "courses": [
+        "Object Oriented Programming",
+        "Data Structure",
+        "AI",
+        "Calculus 1 and 2",
+        "Database Management Systems",
+        "Operating systems and computers architectures",
+        "Requirements Engineering"
+      ]
+    },
+    {
+      "institution": "FIAP",
+      "area": "Analyst and development of software",
+      "studyType": "Technician",
+      "startDate": "2021-01-01",
+      "endDate": "2023-12-01",
+      "courses": [
+        "Object Oriented Programming",
+        "Database Management Systems",
+        "Operating systems and computers architectures",
+        "Requirements Engineering"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "CI/CD",
+      "x_icon": "fa-code",
+      "x_description": "Implementing continuous integration and deployment pipelines with Azure DevOps, GitHub Actions"
+    },
+    {
+      "name": "Python",
+      "x_icon": "fa-brands fa-python",
+      "x_description": "Writting deployment tools and scripts, and automating all possible tasks with Python"
+    },
+    {
+      "name": "C/C++",
+      "x_icon": "fa-brands fa-c",
+      "x_description": "Writtings embedded code, estructured code"
+    },
+    {
+      "name": "Software Diagrams",
+      "x_icon": "fa-brands fa-diagram-project",
+      "x_description": "Writtings embedded code, estructured code"
+    },
+    {
+      "name": "Monitoring",
+      "x_icon": "fa-chart-line",
+      "x_description": "Implementing centralized monitoring solution for cloud environments with Telegraf, InfluxDB and Grafana"
+    },
+    {
+      "name": "Serverless",
+      "x_icon": "fa-bolt",
+      "x_description": "Building reliable and cost efficient systems with Lambda functions and the serverless framework"
+    },
+    {
+      "name": "Containers",
+      "x_icon": "fa-brands fa-docker",
+      "x_description": "Delivering and distributing applications and tools with Docker, docker-compose and kubernetes"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent speaker"
+    },
+    {
+      "language": "Portuguese",
+      "fluency": "Native speaker"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Microservices with Kubernetes",
+      "issuer": "FIAP",
+      "url": "https://www2.fiap.com.br/inscricaoworkshopdobem/ImagemCertificado/DC7F583F-8AB0-4030-999D-5D2CD0141D8F",
+      "x_badgeId": "3b4c4056-b736-4a9b-bcad-5a8457ef72e1",
+      "x_imageId": "f88d800c-5261-45c6-9515-0458e31c3e16",
+      "x_imageName": "ckad_from_cncfsite.png"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Travel bug",
+      "x_icon": "fa-globe-africa"
+    },
+    {
+      "name": "Dog lover",
+      "x_icon": "fa-dog"
+    },
+    {
+      "name": "Foodie",
+      "x_icon": "fa-utensils"
+    },
+    {
+      "name": "Live in the now",
+      "x_icon": "fa-brain"
+    }
+  ]
+}
