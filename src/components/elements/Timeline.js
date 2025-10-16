@@ -1,48 +1,46 @@
 import React from "react";
-import TimelineItem from "./TimelineItem";
-import TimelineHeader from "./TimelineHeader";
 import Resume from "../../resume.json";
 
 function Timeline() {
   return (
-    <div className="timeline is-centered">
-      <header className="timeline-header">
-        <span className="tag is-medium is-dark">
-          {new Date().getFullYear()}
-        </span>
-      </header>
-      <div className="timeline-item">
-        <div className="timeline-marker is-success"></div>
-        <div className="timeline-content"></div>
-      </div>
-      {Resume.work
-        .map(item => {
-          return new Date(item.startDate).getFullYear();
-        }).filter((value, index, self) => self.indexOf(value) === index)
-        .map((year, i) => {
-          let content = [];
-          content.push(
-            <TimelineHeader key={i} year={year}/>
-          );
-          content.push(
-            Resume.work
-              .filter(work => new Date(work.startDate).getFullYear() === year)
-              .map((item, j) => {
-                return (
-                  <TimelineItem
-                    key={j}
-                    date={new Date(item.startDate).toLocaleString("en-UK", {
-                      month: "long",
-                      year: "numeric"
-                    })}
-                    company={item.company}
-                    summary={item.summary}
-                  />
-                );
-              })
-          );
-          return content;
-        })}
+    <div className="timeline">
+      {Resume.work.map((item, index) => {
+        const startDate = new Date(item.startDate);
+        const endDate = item.endDate ? new Date(item.endDate) : null;
+        const duration = endDate 
+          ? `${startDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} - ${endDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}`
+          : `${startDate.toLocaleDateString('en-US', { month: 'short', year: 'numeric' })} - Present`;
+        
+        return (
+          <div key={index} className="timeline-item">
+            <div className="timeline-content">
+              <div className="timeline-card">
+                <div className="timeline-header">
+                  <h3 className="timeline-company terminal-text">{item.company}</h3>
+                  <span className="timeline-position">{item.position}</span>
+                  <span className="timeline-duration">{duration}</span>
+                </div>
+                <p className="timeline-summary">{item.summary}</p>
+                {item.website && (
+                  <a href={item.website} target="_blank" rel="noopener noreferrer" className="timeline-link">
+                    <i className="fas fa-external-link-alt"></i> Visit Website
+                  </a>
+                )}
+                {item.highlights && item.highlights.length > 0 && (
+                  <div className="timeline-highlights">
+                    <h4>Key Highlights:</h4>
+                    <ul>
+                      {item.highlights.map((highlight, idx) => (
+                        <li key={idx}>{highlight}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
