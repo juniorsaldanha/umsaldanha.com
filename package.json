@@ -9,7 +9,7 @@
   },
   "engines": {
     "node": "22.x",
-    "npm": "8.11.0"
+    "npm": ">=8.11.0"
   },
   "scripts": {
     "start": "react-scripts start",
