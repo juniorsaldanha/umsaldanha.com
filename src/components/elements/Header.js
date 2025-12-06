@@ -34,7 +34,7 @@ function Header() {
               className="nav-item"
               onClick={() => setIsMenuOpen(false)}
             >
-              <span className="nav-prompt">></span>
+              <span className="nav-prompt">&gt;</span>
               <span className="nav-text">{item.text}</span>
             </a>
           ))}
